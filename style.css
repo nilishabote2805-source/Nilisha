@@ -1,0 +1,69 @@
+/* General Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+#game-container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  width: 350px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#status, #score {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+#buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.game-btn {
+  width: 90px;
+  height: 90px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#red { background: linear-gradient(45deg, #ff416c, #ff4b2b); }
+#green { background: linear-gradient(45deg, #00b09b, #96c93d); }
+#blue { background: linear-gradient(45deg, #4facfe, #00f2fe); }
+#yellow { background: linear-gradient(45deg, #f6d365, #fda085); }
+
+.game-btn.active {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Hover Effect for Buttons */
+.game-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Start Button Styles */
+#start-button {
+  margin-top: 20px;
+  padding: 12px 
